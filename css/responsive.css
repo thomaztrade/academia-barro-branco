@@ -1,0 +1,291 @@
+/**
+ * Responsive Design - Media Queries
+ * Mobile First Approach
+ * @version 1.0.0
+ */
+
+/* ===================================
+   Small Devices (< 480px)
+   =================================== */
+@media (max-width: 479px) {
+    .container {
+        padding: 0 var(--space-md);
+    }
+
+    h1 { font-size: var(--font-size-3xl); }
+    h2 { font-size: var(--font-size-2xl); }
+    h3 { font-size: var(--font-size-xl); }
+    h4 { font-size: var(--font-size-lg); }
+
+    .header-content {
+        padding: var(--space-sm) 0;
+    }
+
+    .logo-text h1 {
+        font-size: var(--font-size-lg);
+    }
+
+    .logo-subtitle {
+        font-size: var(--font-size-xs);
+    }
+
+    /* Hide desktop nav */
+    .nav-desktop {
+        display: none;
+    }
+
+    /* Show mobile menu button */
+    .btn-menu {
+        display: flex !important;
+    }
+
+    /* Hero */
+    .hero {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+        padding: var(--space-2xl) var(--space-lg);
+    }
+
+    .hero-emoji {
+        font-size: 5rem;
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    /* Features Grid */
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+
+    .feature-card {
+        padding: var(--space-lg);
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+
+    /* Mission Card */
+    .mission-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-md);
+    }
+}
+
+/* ===================================
+   Medium Devices (480px - 768px)
+   =================================== */
+@media (min-width: 480px) and (max-width: 767px) {
+    .container {
+        padding: 0 var(--space-lg);
+    }
+
+    /* Hide desktop nav */
+    .nav-desktop {
+        display: none;
+    }
+
+    /* Show mobile menu button */
+    .btn-menu {
+        display: flex !important;
+    }
+
+    /* Hero */
+    .hero {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+        padding: var(--space-2xl) var(--space-lg);
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-lg);
+    }
+
+    /* Features Grid */
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-lg);
+    }
+}
+
+/* ===================================
+   Tablets (768px - 1024px)
+   =================================== */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        padding: 0 var(--space-xl);
+    }
+
+    /* Show desktop nav */
+    .nav-desktop {
+        display: flex;
+    }
+
+    /* Hide mobile menu button */
+    .btn-menu {
+        display: none !important;
+    }
+
+    /* Hero */
+    .hero {
+        grid-template-columns: 1fr 0.8fr;
+        gap: var(--space-2xl);
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-lg);
+    }
+
+    /* Features Grid */
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-2xl);
+    }
+}
+
+/* ===================================
+   Desktop (1024px - 1440px)
+   =================================== */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .container {
+        padding: 0 var(--space-xl);
+    }
+
+    /* Show desktop nav */
+    .nav-desktop {
+        display: flex;
+    }
+
+    /* Hide mobile menu button */
+    .btn-menu {
+        display: none !important;
+    }
+
+    /* Hero */
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-3xl);
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--space-lg);
+    }
+
+    /* Features Grid */
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-2xl);
+    }
+}
+
+/* ===================================
+   Large Desktop (> 1440px)
+   =================================== */
+@media (min-width: 1440px) {
+    .container {
+        padding: 0 var(--space-2xl);
+        max-width: 1400px;
+    }
+
+    /* Show desktop nav */
+    .nav-desktop {
+        display: flex;
+    }
+
+    /* Hide mobile menu button */
+    .btn-menu {
+        display: none !important;
+    }
+
+    /* Hero */
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-4xl);
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--space-lg);
+    }
+
+    /* Features Grid */
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-2xl);
+    }
+}
+
+/* ===================================
+   Touch Devices
+   =================================== */
+@media (hover: none) and (pointer: coarse) {
+    /* Aumentar área de toque */
+    .btn,
+    .btn-icon,
+    .nav-link,
+    a {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    /* Desabilitar hover effects */
+    .btn:hover,
+    .btn-icon:hover,
+    .nav-link:hover {
+        transform: none;
+    }
+}
+
+/* ===================================
+   Landscape Mode
+   =================================== */
+@media (max-height: 600px) and (orientation: landscape) {
+    .main {
+        min-height: auto;
+        padding: var(--space-lg) 0;
+    }
+
+    .hero {
+        padding: var(--space-lg);
+        gap: var(--space-lg);
+    }
+
+    .stats-grid,
+    .features-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+/* ===================================
+   High DPI Displays (Retina)
+   =================================== */
+@media (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi) {
+    /* Qualidade de imagens pode ser aumentada aqui */
+}
+
+/* ===================================
+   Low Bandwidth
+   =================================== */
+@media (prefers-reduced-data: reduce) {
+    * {
+        animation-duration: 0ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0ms !important;
+    }
+}

@@ -1,0 +1,58 @@
+{
+  "dailyMissions": [
+    {
+      "id": 1,
+      "title": "Responda 10 questões de Português",
+      "description": "Pratique interpretação de textos",
+      "category": "Portuguese",
+      "reward": 50,
+      "difficulty": "medium",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "title": "Estude 30 minutos de Matemática",
+      "description": "Foco em Álgebra",
+      "category": "Math",
+      "reward": 60,
+      "difficulty": "hard",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "title": "Complete um flashcard de Inglês",
+      "description": "Vocabulário Avançado",
+      "category": "English",
+      "reward": 40,
+      "difficulty": "easy",
+      "completed": false
+    },
+    {
+      "id": 4,
+      "title": "Responda quiz de História",
+      "description": "Período Colonial Brasileiro",
+      "category": "History",
+      "reward": 55,
+      "difficulty": "medium",
+      "completed": false
+    }
+  ],
+  "weeklyMissions": [
+    {
+      "id": 101,
+      "title": "Estude 5 horas esta semana",
+      "description": "Mantenha o ritmo de estudos",
+      "reward": 200,
+      "target": 300,
+      "current": 0
+    },
+    {
+      "id": 102,
+      "title": "Acerte 80% das questões",
+      "description": "Melhore sua taxa de acerto",
+      "reward": 250,
+      "target": 80,
+      "current": 0
+    }
+  ]
+}

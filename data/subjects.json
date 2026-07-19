@@ -1,0 +1,94 @@
+{
+  "subjects": [
+    {
+      "id": 1,
+      "name": "Português",
+      "emoji": "📚",
+      "color": "#f97316",
+      "chapters": 12,
+      "progress": 0,
+      "topics": [
+        "Interpretação de Textos",
+        "Gramática",
+        "Ortografia",
+        "Pontuação",
+        "Figuras de Linguagem"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Inglês",
+      "emoji": "🌍",
+      "color": "#3b82f6",
+      "chapters": 10,
+      "progress": 0,
+      "topics": [
+        "Verb Tenses",
+        "Vocabulary",
+        "Reading Comprehension",
+        "Phrasal Verbs",
+        "Conversations"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Matemática",
+      "emoji": "🔢",
+      "color": "#22c55e",
+      "chapters": 15,
+      "progress": 0,
+      "topics": [
+        "Álgebra",
+        "Geometria",
+        "Trigonometria",
+        "Logaritmo",
+        "Funções"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "História",
+      "emoji": "🏛️",
+      "color": "#ef4444",
+      "chapters": 8,
+      "progress": 0,
+      "topics": [
+        "História Geral",
+        "História do Brasil",
+        "Período Colonial",
+        "Independência",
+        "República"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Geografia",
+      "emoji": "🌎",
+      "color": "#8b5cf6",
+      "chapters": 8,
+      "progress": 0,
+      "topics": [
+        "Geografia Física",
+        "Geografia Humana",
+        "Cartografia",
+        "Brasil - Regiões",
+        "Clima e Vegetação"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Conhecimentos Gerais",
+      "emoji": "💡",
+      "color": "#f59e0b",
+      "chapters": 6,
+      "progress": 0,
+      "topics": [
+        "Atualidades",
+        "Política",
+        "Economia",
+        "Tecnologia",
+        "Sociedade"
+      ]
+    }
+  ]
+}

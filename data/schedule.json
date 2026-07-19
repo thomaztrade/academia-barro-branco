@@ -1,0 +1,62 @@
+{
+  "exams": [
+    {
+      "id": 1,
+      "name": "1ª Fase - Prova Objetiva",
+      "date": "2024-08-16",
+      "time": "09:00",
+      "subjects": [
+        "Português",
+        "Inglês",
+        "Matemática",
+        "História",
+        "Geografia",
+        "Conhecimentos Gerais"
+      ],
+      "questions": 100,
+      "duration": "4 horas"
+    },
+    {
+      "id": 2,
+      "name": "2ª Fase - Redação",
+      "date": "2024-09-20",
+      "time": "14:00",
+      "subjects": ["Redação"],
+      "duration": "2 horas"
+    },
+    {
+      "id": 3,
+      "name": "3ª Fase - TAF (Teste de Aptidão Física)",
+      "date": "2024-10-15",
+      "time": "06:00",
+      "subjects": [
+        "Corrida de 2,4 km",
+        "Flexão de braço",
+        "Abdominal",
+        "Teste de resistência"
+      ]
+    }
+  ],
+  "milestones": [
+    {
+      "date": "2024-07-20",
+      "title": "Inscrições Encerradas",
+      "description": "Último dia para se inscrever"
+    },
+    {
+      "date": "2024-08-16",
+      "title": "1ª Fase",
+      "description": "Prova Objetiva"
+    },
+    {
+      "date": "2024-09-20",
+      "title": "2ª Fase",
+      "description": "Redação"
+    },
+    {
+      "date": "2024-10-15",
+      "title": "3ª Fase",
+      "description": "TAF"
+    }
+  ]
+}
