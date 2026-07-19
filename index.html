@@ -20,6 +20,8 @@
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/dashboard.css">
     
     <!-- Google Fonts -->
@@ -30,116 +32,204 @@
 <body>
     <!-- App Container -->
     <div id="app" class="app">
-        <!-- Header -->
-        <header class="header" role="banner">
-            <div class="container">
-                <div class="header-content">
-                    <div class="logo">
+        <!-- Dashboard Page -->
+        <section id="dashboard" class="page page-dashboard active" data-page="dashboard">
+            <!-- Header -->
+            <header class="dashboard-header">
+                <div class="dashboard-header-top">
+                    <div class="logo-bar">
                         <span class="logo-icon">🎓</span>
                         <div class="logo-text">
                             <h1>Academia</h1>
                             <span class="logo-subtitle">Barro Branco</span>
                         </div>
                     </div>
-                    
-                    <nav class="nav-desktop" role="navigation" aria-label="Navegação principal">
-                        <a href="#home" class="nav-link active" data-page="home">Início</a>
-                        <a href="#dashboard" class="nav-link" data-page="dashboard">Dashboard</a>
-                        <a href="#cronograma" class="nav-link" data-page="cronograma">Cronograma</a>
-                        <a href="#materias" class="nav-link" data-page="materias">Matérias</a>
-                        <a href="#perfil" class="nav-link" data-page="perfil">Perfil</a>
-                    </nav>
-                    
-                    <div class="header-actions">
-                        <button id="themeToggle" class="btn-icon" title="Alternar tema" aria-label="Alternar modo escuro">
-                            <span>🌙</span>
-                        </button>
-                        <button id="menuToggle" class="btn-icon btn-menu" title="Menu" aria-label="Abrir menu">
-                            <span>☰</span>
-                        </button>
-                    </div>
+                    <button id="themeToggle" class="btn-icon" title="Alternar tema" aria-label="Alternar modo escuro">
+                        <span>🌙</span>
+                    </button>
                 </div>
-            </div>
-        </header>
 
-        <!-- Mobile Navigation -->
-        <nav id="mobileMenu" class="nav-mobile" role="navigation" aria-label="Navegação móvel">
-            <div class="nav-mobile-content">
-                <a href="#home" class="nav-mobile-link active" data-page="home">Início</a>
-                <a href="#dashboard" class="nav-mobile-link" data-page="dashboard">Dashboard</a>
-                <a href="#cronograma" class="nav-mobile-link" data-page="cronograma">Cronograma</a>
-                <a href="#materias" class="nav-mobile-link" data-page="materias">Matérias</a>
-                <a href="#perfil" class="nav-mobile-link" data-page="perfil">Perfil</a>
-            </div>
-        </nav>
-
-        <!-- Main Content -->
-        <main class="main" role="main">
-            <div id="pages" class="pages">
-                <!-- Home Page -->
-                <section id="home" class="page page-home active" data-page="home">
-                    <div class="container">
-                        <div class="hero">
-                            <div class="hero-content">
-                                <h2 class="hero-title">Bem-vindo à Academia Barro Branco</h2>
-                                <p class="hero-subtitle">Sua jornada para se tornar um Aluno-Oficial da PM-SP começa aqui</p>
-                                <button class="btn btn-primary btn-lg" data-page="dashboard">
-                                    <span>🚀 Começar Agora</span>
-                                </button>
-                            </div>
-                            <div class="hero-visual">
-                                <div class="hero-emoji">📚</div>
-                            </div>
+                <!-- User Info Card -->
+                <div class="user-card">
+                    <div class="user-info">
+                        <div class="user-avatar">👨‍✈️</div>
+                        <div class="user-details">
+                            <p class="user-rank">Cadete</p>
+                            <h2 class="user-name" id="userName">Thomaz</h2>
                         </div>
                     </div>
-                </section>
-
-                <!-- Dashboard Page -->
-                <section id="dashboard" class="page page-dashboard" data-page="dashboard">
-                    <div class="container">
-                        <h2>Dashboard</h2>
-                        <p>Conteúdo do dashboard será adicionado em breve...</p>
+                    <div class="user-stats">
+                        <div class="user-stat">
+                            <span class="stat-value">0</span>
+                            <span class="stat-label">XP</span>
+                        </div>
+                        <div class="user-stat">
+                            <span class="stat-value">0</span>
+                            <span class="stat-label">Dias</span>
+                        </div>
                     </div>
-                </section>
-
-                <!-- Cronograma Page -->
-                <section id="cronograma" class="page page-cronograma" data-page="cronograma">
-                    <div class="container">
-                        <h2>Cronograma</h2>
-                        <p>Cronograma será adicionado em breve...</p>
-                    </div>
-                </section>
-
-                <!-- Matérias Page -->
-                <section id="materias" class="page page-materias" data-page="materias">
-                    <div class="container">
-                        <h2>Matérias</h2>
-                        <p>Matérias serão adicionadas em breve...</p>
-                    </div>
-                </section>
-
-                <!-- Perfil Page -->
-                <section id="perfil" class="page page-perfil" data-page="perfil">
-                    <div class="container">
-                        <h2>Perfil</h2>
-                        <p>Perfil será adicionado em breve...</p>
-                    </div>
-                </section>
-            </div>
-        </main>
-
-        <!-- Footer -->
-        <footer class="footer" role="contentinfo">
-            <div class="container">
-                <div class="footer-content">
-                    <p>&copy; 2024 Academia Barro Branco. Todos os direitos reservados.</p>
-                    <p class="footer-version">v1.0.0</p>
                 </div>
-            </div>
-        </footer>
+            </header>
+
+            <!-- Main Content -->
+            <main class="dashboard-main">
+                <div class="container-dashboard">
+                    <!-- Countdown Section -->
+                    <section class="countdown-card card-premium">
+                        <div class="countdown-header">
+                            <h3>⏰ Faltam</h3>
+                            <p class="countdown-label">Para a prova de Aluno-Oficial</p>
+                        </div>
+                        <div class="countdown-display">
+                            <div class="countdown-unit">
+                                <div class="countdown-value" id="countdown-days">00</div>
+                                <div class="countdown-unit-label">Dias</div>
+                            </div>
+                            <span class="countdown-sep">:</span>
+                            <div class="countdown-unit">
+                                <div class="countdown-value" id="countdown-hours">00</div>
+                                <div class="countdown-unit-label">Horas</div>
+                            </div>
+                            <span class="countdown-sep">:</span>
+                            <div class="countdown-unit">
+                                <div class="countdown-value" id="countdown-minutes">00</div>
+                                <div class="countdown-unit-label">Min</div>
+                            </div>
+                            <span class="countdown-sep">:</span>
+                            <div class="countdown-unit">
+                                <div class="countdown-value" id="countdown-seconds">00</div>
+                                <div class="countdown-unit-label">Seg</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Progress Section -->
+                    <section class="progress-card card-premium">
+                        <div class="progress-header">
+                            <h3>📊 Seu Progresso</h3>
+                            <span class="progress-percent">0%</span>
+                        </div>
+                        <div class="progress-main">
+                            <div class="progress-bar-large">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                            <p class="progress-text">Continue estudando para desbloquear novos conteúdos</p>
+                        </div>
+                        <div class="progress-subjects">
+                            <div class="subject-progress">
+                                <div class="subject-name">Português</div>
+                                <div class="subject-bar">
+                                    <div class="subject-fill" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="subject-progress">
+                                <div class="subject-name">Matemática</div>
+                                <div class="subject-bar">
+                                    <div class="subject-fill" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="subject-progress">
+                                <div class="subject-name">História</div>
+                                <div class="subject-bar">
+                                    <div class="subject-fill" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Daily Mission -->
+                    <section class="mission-card card-premium mission-featured">
+                        <div class="mission-badge">🎯 Missão do Dia</div>
+                        <h3 class="mission-title">Responda 10 questões de Português</h3>
+                        <p class="mission-description">Pratique interpretação de textos e melhore sua compreensão. Foco em análise de argumentação.</p>
+                        
+                        <div class="mission-progress-section">
+                            <div class="mission-progress-header">
+                                <span class="progress-count">0 de 10</span>
+                                <span class="progress-reward">+50 XP</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary btn-mission">
+                            <span>🚀 Começar Missão</span>
+                        </button>
+                    </section>
+
+                    <!-- Motivation Quote -->
+                    <section class="quote-card">
+                        <div class="quote-icon">💡</div>
+                        <blockquote class="quote-text">
+                            "A disciplina é o resultado da prática deliberada. Estude com propósito, não apenas com tempo."
+                        </blockquote>
+                        <p class="quote-author">— Academia Barro Branco</p>
+                    </section>
+
+                    <!-- Quick Stats -->
+                    <section class="stats-grid-section">
+                        <div class="stat-item">
+                            <div class="stat-icon">📚</div>
+                            <div class="stat-info">
+                                <div class="stat-value-text">0</div>
+                                <div class="stat-label-text">Questões</div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">⏱️</div>
+                            <div class="stat-info">
+                                <div class="stat-value-text">0h</div>
+                                <div class="stat-label-text">Estudado</div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">🔥</div>
+                            <div class="stat-info">
+                                <div class="stat-value-text">0</div>
+                                <div class="stat-label-text">Streak</div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">✅</div>
+                            <div class="stat-info">
+                                <div class="stat-value-text">0%</div>
+                                <div class="stat-label-text">Acertos</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Spacer for bottom nav -->
+                    <div style="height: 100px;"></div>
+                </div>
+            </main>
+        </section>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <a href="#home" class="nav-bottom-link" data-page="home">
+                <span class="nav-icon">🏠</span>
+                <span class="nav-label">Início</span>
+            </a>
+            <a href="#dashboard" class="nav-bottom-link active" data-page="dashboard">
+                <span class="nav-icon">📊</span>
+                <span class="nav-label">Dashboard</span>
+            </a>
+            <a href="#estudar" class="nav-bottom-link" data-page="estudar">
+                <span class="nav-icon">📖</span>
+                <span class="nav-label">Estudar</span>
+            </a>
+            <a href="#perfil" class="nav-bottom-link" data-page="perfil">
+                <span class="nav-icon">👤</span>
+                <span class="nav-label">Perfil</span>
+            </a>
+        </nav>
     </div>
 
     <!-- Scripts -->
+    <script src="js/storage.js" defer></script>
+    <script src="js/modules/stats.js" defer></script>
+    <script src="js/modules/ui.js" defer></script>
     <script src="js/app.js" defer></script>
     <script src="js/countdown.js" defer></script>
     <script src="js/navigation.js" defer></script>
